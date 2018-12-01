@@ -1,7 +1,7 @@
 ﻿<Application x:Class="DilogBox.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DilogBox"
+             xmlns:local="clr-namespace:DilogBox" <!-- adding a comment-->
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
