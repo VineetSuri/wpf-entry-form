@@ -1,0 +1,103 @@
+﻿<Window x:Class="DilogBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DilogBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400" HorizontalContentAlignment="Stretch">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Right">
+                 First:
+            </Label>
+            <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right">
+                Last:
+            </Label>
+            <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right">
+                Address:
+            </Label>
+            <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right">
+                City:
+            </Label>
+            <Label Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right">
+                State:
+            </Label>
+            <Label Grid.Row="4" Grid.Column="2" HorizontalAlignment="Right">
+                Zip:
+            </Label>
+
+            <TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" BorderThickness="2" HorizontalAlignment="Stretch"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" BorderThickness="2" HorizontalAlignment="Stretch"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" BorderThickness="2" HorizontalAlignment="Stretch"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" BorderThickness="2" HorizontalAlignment="Stretch"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" BorderThickness="2"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="3" HorizontalAlignment="Stretch" BorderThickness="2"></TextBox>
+        </Grid>     
+
+
+        <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Label.LayoutTransform>
+                <RotateTransform Angle="-90"/>
+            </Label.LayoutTransform>
+            Name
+        </Label>
+
+        <Grid Grid.Row="0" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="3" Margin="7,3">Look Up</Button>            
+        </Grid>
+        
+        
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>                
+            </Grid.RowDefinitions>
+
+            <StackPanel Name="stkpanel" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="5,5">Close</Button>
+                <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="5,5">Save</Button>
+            </StackPanel>
+            
+        </Grid>
+
+
+
+    </Grid>
+</Window>
